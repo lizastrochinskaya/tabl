@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables</title>
+</head>
+
+<body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .table {
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+      padding-top: 50px;
+    }
+
+    table {
+      color: white;
+      width: 60%;
+      margin: auto;
+      border-collapse: collapse;
+    }
+
+    caption {
+      margin-bottom: 50px;
+    }
+
+    td,
+    th {
+      border: 0.5px solid orange;
+      padding: 10px;
+    }
+
+    th {
+      border-top: 5px solid orange;
+    }
+  </style>
+  <div class="table">
+    <table>
+      <caption>Цены на флагманские модели iPhone и Xiaomi</caption>
+      <thead>
+        <tr>
+          <th>Производитель</th>
+          <th>Модель</th>
+          <th>Цена</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">iPhone</td>
+          <td>12 Pro</td>
+          <td>$999</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>$799</td>
+        </tr>
+        <tr>
+          <td>12 mini</td>
+          <td>$699</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Xiaomi</td>
+          <td>mi 10</td>
+          <td>$768</td>
+        </tr>
+        <tr>
+          <td>Black shark 3 128Gb</td>
+          <td>$529</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Средняя цена</td>
+          <td>$758.8</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+
+</body>
+
+</html>
